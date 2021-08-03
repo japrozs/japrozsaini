@@ -30,7 +30,6 @@ export default function Home() {
         fontSize = "60px";
         width = "700px";
     }
-
     return (
         <Box
             backgroundColor={"#0B0E11"}
