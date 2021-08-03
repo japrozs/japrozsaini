@@ -98,10 +98,10 @@ export default function Home() {
                 Technologies I{"'"}m proficient in
             </Text>
             <List mb={5} spacing={3}>
-                <Check text="TypeScript, GraphQL" />
+                <Check text="TypeScript, GraphQL, Apollo" />
                 <Check text="Full Stack Engineering" />
-                <Check text="React, NextJS, React Native" />
-                <Check text="PostgreSQL" />
+                <Check text="React, NextJS, React Native (Expo)" />
+                <Check text="PostgreSQL, MongoDb, Firebase" />
                 <Check text="UI/UX design" />
             </List>
         </Box>
