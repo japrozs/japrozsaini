@@ -2,15 +2,21 @@ import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import Navbar from "../components/Navbar";
+import matter from "gray-matter";
 import Head from "next/head";
 import { PostCard } from "../components/PostCard";
 
-interface PostProps {}
+interface PostProps {
+    data: Array<any>;
+}
 
-const Posts: React.FC<PostProps> = () => {
+const Posts: React.FC<PostProps> = (props) => {
     const isTabletOrMobile = useMediaQuery({ query: "(max-width: 550px)" });
     let fontSize = "";
     let width = "";
+
+    const RealData = props.data.map((blog) => matter(blog));
+    const items = RealData.map((listItem) => listItem.data);
 
     if (isTabletOrMobile) {
         fontSize = "40px";
@@ -26,13 +32,40 @@ const Posts: React.FC<PostProps> = () => {
             </Head>
             <Navbar />
             <Text fontSize={fontSize}>Posts</Text>
-            <PostCard
-                title="new post"
-                body="this is a very nice post"
-                createdAt={"2021-07-04 01:58:57.643331"}
-            />
+            {items.map((blog, i) => (
+                <PostCard
+                    key={i}
+                    slug={blog.slug}
+                    title={blog.title}
+                    body={blog.description}
+                    createdAt={blog.date}
+                />
+            ))}
         </Box>
     );
 };
+
+export async function getStaticProps() {
+    const fs = require("fs");
+
+    const files = fs.readdirSync(`${process.cwd()}/content`, "utf-8");
+
+    const blogs = files.filter((fn) => fn.endsWith(".md"));
+
+    const data = blogs.map((blog) => {
+        const path = `${process.cwd()}/content/${blog}`;
+        const rawContent = fs.readFileSync(path, {
+            encoding: "utf-8",
+        });
+
+        return rawContent;
+    });
+
+    return {
+        props: {
+            data: data,
+        },
+    };
+}
 
 export default Posts;

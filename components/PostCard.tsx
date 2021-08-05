@@ -26,6 +26,7 @@ const truncate = (str: string, limit: number) => {
 interface PostCardProps {
     title: string;
     body: string;
+    slug: string;
     createdAt: string;
 }
 
@@ -33,13 +34,13 @@ export const PostCard: React.FC<PostCardProps> = ({
     title,
     body,
     createdAt,
+    slug,
 }) => {
     const router = useRouter();
     return (
         <Box
-            onClick={() => router.push(`post/${title.replace(" ", "-")}`)}
-            px={3}
-            py={3}
+            onClick={() => router.push(`blog/${slug}`)}
+            p={4}
             mb={2}
             transition={"all 0.1s ease-in-out"}
             borderRadius="0.2rem"
