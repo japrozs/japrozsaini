@@ -10,6 +10,10 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
+                    <link
+                        href="http://fonts.cdnfonts.com/css/noe-display"
+                        rel="stylesheet"
+                    ></link>
                     <script
                         defer
                         data-domain="japrozsaini.me"
