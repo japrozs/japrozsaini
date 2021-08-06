@@ -26,12 +26,18 @@ const Posts: React.FC<PostProps> = (props) => {
         width = "700px";
     }
     return (
-        <Box maxWidth="100vw" px={"2vw"} width={width} mx={"auto"}>
+        <Box maxWidth="100vw" px={"4vw"} width={width} mx={"auto"}>
             <Head>
                 <title>All Posts • Japroz Saini</title>
             </Head>
             <Navbar />
-            <Text fontSize={fontSize}>Posts</Text>
+            <Text
+                fontWeight={"500"}
+                fontFamily={"Noe Display"}
+                fontSize={fontSize}
+            >
+                Posts
+            </Text>
             {items.map((blog, i) => (
                 <PostCard
                     key={i}
