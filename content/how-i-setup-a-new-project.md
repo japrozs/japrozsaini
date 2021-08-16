@@ -1,6 +1,6 @@
 ---
 slug: how-i-setup-a-new-project
-title: Vent
+title: How I setup a new project
 description: How to setup a new project so that you can manage your code easily.
 date: 16-August-2021
 ---
