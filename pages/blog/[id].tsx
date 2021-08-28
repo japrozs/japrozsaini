@@ -6,7 +6,7 @@ import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import ChakraUIRenderer from "chakra-ui-markdown-renderer";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import atomOneDark from "react-syntax-highlighter/dist/esm/styles/prism/material-dark";
+import atomOneDark from "react-syntax-highlighter/dist/cjs/styles/prism/material-dark";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import Navbar from "../../components/Navbar";
@@ -23,9 +23,8 @@ const parseDate = (date) => {
 };
 
 const CodeBlock = ({ children, ...rest }) => {
-    console.log(rest);
     return (
-        <SyntaxHighlighter language={"javascript"} style={atomOneDark}>
+        <SyntaxHighlighter language={rest.className} style={atomOneDark}>
             {children}
         </SyntaxHighlighter>
     );
