@@ -22,7 +22,7 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
         <ModalEl isOpen={isOpen} onClose={onClose}>
             <ModalOverlay />
             <ModalContent backgroundColor={"#0B0E11"}>
-                <ModalHeader fontFamily={"body"}>Modal Title</ModalHeader>
+                <ModalHeader fontFamily={"body"}>Contact</ModalHeader>
                 <ModalCloseButton />
                 <ModalBody>
                     <Text fontFamily="Inter" fontSize="18px">
