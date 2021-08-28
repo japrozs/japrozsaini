@@ -80,10 +80,7 @@ const Blog = ({ content, data }) => {
                 </Text>
                 <Box fontFamily={"body"}>
                     {/* <ReactMarkdown>{content}</ReactMarkdown> */}
-                    <ReactMarkdown
-                        components={ChakraUIRenderer(theme)}
-                        escapeHtml={false}
-                    >
+                    <ReactMarkdown components={ChakraUIRenderer(theme)}>
                         {content}
                     </ReactMarkdown>
                 </Box>

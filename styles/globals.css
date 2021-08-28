@@ -35,6 +35,13 @@ code {
     padding: 0px 10px !important;
     margin: 5px;
     width: 100%;
-    border-radius: 1rem !important;
     /* background-color: #242c37 !important; */
+}
+
+pre {
+    border-radius: 0.2rem !important;
+}
+
+.chakra-code {
+    background-color: inherit !important;
 }
