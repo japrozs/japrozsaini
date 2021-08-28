@@ -5,7 +5,7 @@ description: How to setup a dockerfile to containerize yout appliaction for depl
 date: 3-August-2021
 ---
 
-How to setup a dockerfile to containerize yout appliaction for deployment to various VPS of your choice and how to install it on your VPS. You can use the following dockerfile for your projects that are specially using `typescript` and `yarn`
+How to setup a dockerfile to containerize yout appliaction for deployment to various VPS of your choice and how to install it on your VPS. You can use the following dockerfile for your projects that are specially using typescript and yarn.
 
 ```dockerfile
 

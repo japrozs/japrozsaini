@@ -4,7 +4,9 @@ import { useMediaQuery } from "react-responsive";
 import Head from "next/head";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
+import ChakraUIRenderer from "chakra-ui-markdown-renderer";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import atomOneDark from "react-syntax-highlighter/dist/esm/styles/prism/material-dark";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import Navbar from "../../components/Navbar";
@@ -20,12 +22,17 @@ const parseDate = (date) => {
     return str;
 };
 
-const CodeBlock = ({ language, value }) => {
+const CodeBlock = ({ children, ...rest }) => {
+    console.log(rest);
     return (
-        <SyntaxHighlighter showLineNumbers={true} language={language}>
-            {value}
+        <SyntaxHighlighter language={"javascript"} style={atomOneDark}>
+            {children}
         </SyntaxHighlighter>
     );
+};
+
+const theme = {
+    code: CodeBlock,
 };
 
 const Blog = ({ content, data }) => {
@@ -72,7 +79,13 @@ const Blog = ({ content, data }) => {
                     {parseDate(dayjs(frontmatter.date).toString())}
                 </Text>
                 <Box fontFamily={"body"}>
-                    <ReactMarkdown>{content}</ReactMarkdown>
+                    {/* <ReactMarkdown>{content}</ReactMarkdown> */}
+                    <ReactMarkdown
+                        components={ChakraUIRenderer(theme)}
+                        escapeHtml={false}
+                    >
+                        {content}
+                    </ReactMarkdown>
                 </Box>
             </Box>
         </Box>

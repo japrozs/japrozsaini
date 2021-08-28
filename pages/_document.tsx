@@ -11,7 +11,15 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     <link
-                        href="http://fonts.cdnfonts.com/css/noe-display"
+                        href="https://fonts.cdnfonts.com/css/noe-display"
+                        rel="stylesheet"
+                    ></link>
+                    <link
+                        href="https://fonts.cdnfonts.com/css/menlo"
+                        rel="stylesheet"
+                    ></link>
+                    <link
+                        href="https://rsms.me/inter/inter.css"
                         rel="stylesheet"
                     ></link>
                     <script

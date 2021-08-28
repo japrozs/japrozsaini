@@ -27,3 +27,14 @@ a {
 * {
     box-sizing: border-box;
 }
+
+code {
+    font-family: "Menlo", monospace !important;
+    border: none;
+    box-shadow: none;
+    padding: 0px 10px !important;
+    margin: 5px;
+    width: 100%;
+    border-radius: 1rem !important;
+    /* background-color: #242c37 !important; */
+}
