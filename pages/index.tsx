@@ -16,8 +16,13 @@ import Navbar from "../components/Navbar";
 import { Check } from "../components/Check";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Modal } from "../components/Modal";
+import { GetStaticProps } from "next";
 
-export default function Home() {
+interface HomeProps {
+    data: any;
+}
+
+export default function Home(props) {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const isTabletOrMobile = useMediaQuery({ query: "(max-width: 550px)" });
     let fontSize = "";
@@ -30,6 +35,8 @@ export default function Home() {
         fontSize = "60px";
         width = "700px";
     }
+
+    console.log(props);
     return (
         <Box
             backgroundColor={"#0B0E11"}
@@ -73,6 +80,7 @@ export default function Home() {
                         display="flex"
                         fontSize="19px"
                         width="20%"
+                        fontWeight="600"
                         alignItems="center"
                         href="https://github.com/japrozs"
                         isExternal
@@ -84,6 +92,7 @@ export default function Home() {
                         display="flex"
                         fontSize="19px"
                         width="20%"
+                        fontWeight="600"
                         alignItems="center"
                         href="https://twitter.com/japrozss"
                         isExternal
@@ -95,6 +104,19 @@ export default function Home() {
                         display="flex"
                         fontSize="19px"
                         width="20%"
+                        fontWeight="600"
+                        alignItems="center"
+                        href="https://discord.gg/RUPjzFHsQK"
+                        isExternal
+                    >
+                        Discord
+                        <ExternalLinkIcon mx={2} />
+                    </Link>
+                    <Link
+                        display="flex"
+                        fontSize="19px"
+                        width="20%"
+                        fontWeight="600"
                         alignItems="center"
                         href="https://dev.to/japrozsaini"
                         isExternal
@@ -114,7 +136,7 @@ export default function Home() {
             </Text>
             <List mb={5} spacing={3}>
                 <Check text="TypeScript, GraphQL, Apollo" />
-                <Check text="Full Stack Engineering" />
+                <Check text="Full Stack Engineering, Docker" />
                 <Check text="React, NextJS, React Native (Expo)" />
                 <Check text="PostgreSQL, MongoDb, Firebase" />
                 <Check text="UI/UX design" />

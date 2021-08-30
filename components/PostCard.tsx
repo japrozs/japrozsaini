@@ -53,6 +53,7 @@ export const PostCard: React.FC<PostCardProps> = ({
                     fontWeight="semibold"
                     fontFamily={"body"}
                     fontSize="4xl"
+                    className={"truncate"}
                 >
                     {truncate(title, 24)}
                 </Heading>

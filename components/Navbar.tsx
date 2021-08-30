@@ -34,15 +34,17 @@ const Navbar: React.FC<{}> = () => {
                 />
             </svg>
 
-            <Button
-                mx={"auto"}
-                mr={0}
-                fontSize={"20px"}
-                variant="outline"
-                fontFamily="Inter"
-            >
-                <Link href="/posts">Posts</Link>
-            </Button>
+            <Link href="/posts">
+                <Button
+                    mx={"auto"}
+                    mr={0}
+                    fontSize={"20px"}
+                    variant="outline"
+                    fontFamily="Inter"
+                >
+                    Posts
+                </Button>
+            </Link>
         </Box>
     );
 };

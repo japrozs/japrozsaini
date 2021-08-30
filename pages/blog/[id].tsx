@@ -23,8 +23,12 @@ const parseDate = (date) => {
 };
 
 const CodeBlock = ({ children, ...rest }) => {
+    console.log(rest.className.replace("language-", ""));
     return (
-        <SyntaxHighlighter language={rest.className} style={atomOneDark}>
+        <SyntaxHighlighter
+            language={rest.className.replace("language-", "")}
+            style={atomOneDark}
+        >
             {children}
         </SyntaxHighlighter>
     );
@@ -60,11 +64,7 @@ const Blog = ({ content, data }) => {
                 <Head>
                     <title>{frontmatter.title} • Japroz Saini</title>
                 </Head>
-                <Text
-                    fontWeight="semibold"
-                    fontFamily={"body"}
-                    fontSize={fontSize}
-                >
+                <Text fontWeight="bold" fontFamily={"body"} fontSize={fontSize}>
                     {frontmatter.title}
                 </Text>
                 <Text

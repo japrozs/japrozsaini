@@ -44,4 +44,20 @@ pre {
 
 .chakra-code {
     background-color: inherit !important;
+    margin-left: -10px;
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+*:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+a {
+    color: #30c18d !important;
 }
