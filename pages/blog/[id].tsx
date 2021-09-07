@@ -10,6 +10,7 @@ import atomOneDark from "react-syntax-highlighter/dist/cjs/styles/prism/material
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import Navbar from "../../components/Navbar";
+import {Comments} from "../../components/Comments";
 
 dayjs.extend(relativeTime);
 const parseDate = (date) => {
@@ -84,14 +85,7 @@ const Blog = ({ content, data }) => {
                     </ReactMarkdown>
                 </Box>
             </Box>
-        <script src="https://utteranc.es/client.js"
-                repo="japrozs/japrozsaini"
-                issue-term="title"
-                label="Comment... 🚀 😃 "
-                theme="github-dark"
-                crossorigin="anonymous"
-                async>
-        </script>
+                <Comments/>
         </Box>
     );
 };

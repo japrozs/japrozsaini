@@ -11,6 +11,8 @@ body {
     margin: 0;
     font-family: "Noe Display Medium" !important;
     background-color: #0b0e11 !important;
+    --chakra-fonts-heading : "Inter" !important;
+    --chakra-fonts-body : "Inter" !important;
 }
 
 *:focus {
@@ -61,3 +63,4 @@ pre {
 a {
     color: #30c18d !important;
 }
+
