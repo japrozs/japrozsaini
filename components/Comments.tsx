@@ -16,7 +16,7 @@ export const Comments : React.FC <CommentsProps> = ({}) => {
         scriptEl.setAttribute("repo", "japrozs/japrozsaini")
         scriptEl.setAttribute("issue-term", "title")
         scriptEl.setAttribute("theme", "photon-dark")
-        commentBox.?current?.appendChild(scriptEl)
+        commentBox?.current?.appendChild(scriptEl)
 	}, [])
 		return (
 			<Box id="comments">
