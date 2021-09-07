@@ -23,7 +23,7 @@ const Posts: React.FC<PostProps> = (props) => {
         width = "400px";
     } else {
         fontSize = "60px";
-        width = "700px";
+        width = "850px";
     }
     return (
         <Box maxWidth="100vw" px={"4vw"} width={width} mx={"auto"}>

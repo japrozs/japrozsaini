@@ -33,7 +33,7 @@ export default function Home(props) {
         width = "400px";
     } else {
         fontSize = "60px";
-        width = "700px";
+        width = "850px";
     }
 
     console.log(props);

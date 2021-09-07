@@ -50,7 +50,7 @@ const Blog = ({ content, data }) => {
         width = "400px";
     } else {
         fontSize = "60px";
-        width = "700px";
+        width = "850px";
     }
     return (
         <Box
