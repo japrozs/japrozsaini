@@ -84,6 +84,14 @@ const Blog = ({ content, data }) => {
                     </ReactMarkdown>
                 </Box>
             </Box>
+        <script src="https://utteranc.es/client.js"
+                repo="japrozs/japrozsaini"
+                issue-term="title"
+                label="Comment... 🚀 😃 "
+                theme="github-dark"
+                crossorigin="anonymous"
+                async>
+        </script>
         </Box>
     );
 };
