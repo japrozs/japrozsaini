@@ -32,7 +32,8 @@ function addDL() {
             a++;
             console.log(`Added ${a} Downloads!\n`);
         });
-
+}
+addDL();
 ```
 
-To use this script, just change the name to your package name
+To use this script, just change the name to your package name in the registry URl
