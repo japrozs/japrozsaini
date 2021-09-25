@@ -14,7 +14,7 @@ import {
 import { useMediaQuery } from "react-responsive";
 import Navbar from "../components/Navbar";
 import { Check } from "../components/Check";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { ExternalLinkIcon, TriangleUpIcon } from "@chakra-ui/icons";
 import { Modal } from "../components/Modal";
 import { GetStaticProps } from "next";
 
@@ -141,6 +141,25 @@ export default function Home(props) {
                 <Check text="PostgreSQL, MongoDb, Firebase" />
                 <Check text="UI/UX design" />
             </List>
+            <Flex justifyContent={"center"} alignItems={"center"} my={5}>
+                <Text
+                    fontFamily={"Inter"}
+                    mr={6}
+                    color={"#5d7290"}
+                    fontWeight={"medium"}
+                >
+                    &#169; Japroz Saini {new Date().getFullYear()}
+                </Text>
+                <Link
+                    href="https://japrozsaini.statuspage.io"
+                    style={{ textDecoration: "none" }}
+                >
+                    <Button>
+                        <TriangleUpIcon mr={2} />
+                        <Text fontFamily={"Inter"}>Status</Text>
+                    </Button>
+                </Link>
+            </Flex>
         </Box>
     );
 }
