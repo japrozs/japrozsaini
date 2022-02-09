@@ -7,7 +7,7 @@ date: 6-September-2021
 
 ## The Idea
 
-A few days, I was feeling bored so I went to [freecodecamp.org](www.freecodecamp.org) to learn some new stuff. I looked in to the Machine Learning course, did a few problems and started fiddling with the Chrome devtools when I saw a big JSON object with almost 1700 items and each had a similar structure like so:
+A few days ago, I was feeling bored so I went to [freecodecamp.org](www.freecodecamp.org) to learn some new stuff. I looked in to the Machine Learning course, did a few problems and started fiddling with the Chrome devtools when I saw a big JSON object with almost 1700 items and each had a similar structure like so:
 
 ```json
 {
