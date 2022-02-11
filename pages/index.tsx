@@ -135,11 +135,10 @@ export default function Home(props) {
                 Technologies I{"'"}m proficient in
             </Text>
             <List mb={5} spacing={3}>
-                <Check text="C, TypeScript, GraphQL, Apollo" />
+                <Check text="C, C++, TypeScript, Python" />
                 <Check text="ANSI C, Full Stack Engineering, Docker" />
-                <Check text="React, NextJS, React Native (Expo)" />
-                <Check text="PostgreSQL, Firebase" />
-                <Check text="UI/UX design" />
+                <Check text="React, NextJS, React Native, GraphQL" />
+                <Check text="PostgreSQL, Firebase, UI/UX design" />
             </List>
             <Flex justifyContent={"center"} alignItems={"center"} my={5}>
                 <Text
