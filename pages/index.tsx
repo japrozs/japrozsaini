@@ -59,7 +59,7 @@ export default function Home(props) {
             <Text mb={7} fontFamily="Inter" fontSize="18px" color="gray.300">
                 I{"'"}m a software engineer who loves to play with computers and write softwre in C/C++,
                 and am currently working on some open source projects in C++.
-                Feel free to check them out on my Github page,
+                Feel free to check them out on my Github page.
             </Text>
             <Button onClick={onOpen} mb={2} fontFamily="body" variant="outline">
                 Contact me
