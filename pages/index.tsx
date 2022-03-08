@@ -57,8 +57,8 @@ export default function Home(props) {
                 Hi, I{"'"}m Japroz Saini
             </Text>
             <Text mb={7} fontFamily="Inter" fontSize="18px" color="gray.300">
-                I{"'"}m a software engineer who loves to play with computers and write softwre in C/C++,
-                and am currently working on some open source projects in C++.
+                I{"'"}m a software engineer who loves to play with computers and write software in C/C++,
+                and am currently working on some open source projects in C and C++.
                 Feel free to check them out on my Github page.
             </Text>
             <Button onClick={onOpen} mb={2} fontFamily="body" variant="outline">
