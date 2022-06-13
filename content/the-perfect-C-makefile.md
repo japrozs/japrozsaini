@@ -8,7 +8,7 @@ date: 1-June-2022
 Here's the perfect Makefile.
 
 ```makefile
-CC = gcc
+CC = clang 
 CFLAGS = -Wall -Wextra -pedantic -I include -g
 SRC = $(wildcard *.c src/*.c)
 HEAD = $(wildcard include/*.h)

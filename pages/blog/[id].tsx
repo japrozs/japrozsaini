@@ -10,17 +10,13 @@ import atomOneDark from "react-syntax-highlighter/dist/cjs/styles/prism/material
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import Navbar from "../../components/Navbar";
-import {Comments} from "../../components/Comments";
+import { Comments } from "../../components/Comments";
 
 dayjs.extend(relativeTime);
 const parseDate = (date) => {
-    let str = "";
-    date = date.split(" ");
-    for (let i = 0; i < 3; i++) {
-        str += date[i] + " ";
-    }
+    var d = (new Date(date) + "").split(" ");
 
-    return str;
+    return [d[1], parseInt(d[2]) + ",", , d[3]].join(" ");
 };
 
 const CodeBlock = ({ children, ...rest }) => {
@@ -76,7 +72,7 @@ const Blog = ({ content, data }) => {
                     // color={"#b2bdcd"}
                     color={"#34D399"}
                 >
-                    {parseDate(dayjs(frontmatter.date).toString())}
+                    {parseDate(frontmatter.date.replace(/-/g, " "))}
                 </Text>
                 <Box fontFamily={"body"}>
                     {/* <ReactMarkdown>{content}</ReactMarkdown> */}
@@ -85,7 +81,7 @@ const Blog = ({ content, data }) => {
                     </ReactMarkdown>
                 </Box>
             </Box>
-                <Comments/>
+            <Comments />
         </Box>
     );
 };

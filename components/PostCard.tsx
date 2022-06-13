@@ -6,13 +6,9 @@ import { useRouter } from "next/router";
 
 dayjs.extend(relativeTime);
 const parseDate = (date) => {
-    let str = "";
-    date = date.split(" ");
-    for (let i = 0; i < 3; i++) {
-        str += date[i] + " ";
-    }
+    var d = (new Date(date) + "").split(" ");
 
-    return str;
+    return [d[1], parseInt(d[2]) + ",", , d[3]].join(" ");
 };
 
 const truncate = (str: string, limit: number) => {
@@ -64,7 +60,7 @@ export const PostCard: React.FC<PostCardProps> = ({
                     // color={"#b2bdcd"}
                     color={"#34D399"}
                 >
-                    {parseDate(dayjs(createdAt).toString())}
+                    {parseDate(createdAt.replace(/-/g, " "))}
                 </Text>
             </Flex>
             <Text color={"#5d7290"} fontSize={"large"} fontFamily="body">

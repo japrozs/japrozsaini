@@ -16,21 +16,20 @@ const Posts: React.FC<PostProps> = (props) => {
     let width = "";
 
     const RealData = props.data.map((blog) => matter(blog));
-    let items = RealData.map((listItem) => listItem.data);
-    // console.log("before", items);
-    // items = items.sort(
-    //     (a: { [key: string]: any }, b: { [key: string]: any }) => {
-    //         if (new Date(a.date).getTime() < new Date(b.Date).getTime()) {
-    //             console.log(a, b);
-    //             return 1;
-    //         }
-    //         if (new Date(a.date).getTime() > new Date(b.Date).getTime()) {
-    //             return -1;
-    //         }
-    //         return 0;
-    //     }
-    // );
-    // console.log("after", items);
+    var items = RealData.map((listItem) => listItem.data);
+    items = items.sort(
+        (a: { [key: string]: any }, b: { [key: string]: any }) => {
+            const date_a = new Date(a.date.replace(/-/g, " ")).getTime();
+            const date_b = new Date(b.date.replace(/-/g, " ")).getTime();
+            if (date_a < date_b) {
+                return 1;
+            }
+            if (date_a > date_b) {
+                return -1;
+            }
+            return 0;
+        }
+    );
 
     if (isTabletOrMobile) {
         fontSize = "40px";
