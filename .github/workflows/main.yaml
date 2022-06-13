@@ -16,4 +16,5 @@ jobs:
                   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
                   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
               run: |
+                  echo token :: ${VERCEL_TOKEN}
                   npx vercel --token ${VERCEL_TOKEN} --prod
