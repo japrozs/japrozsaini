@@ -17,4 +17,4 @@ jobs:
                   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
               run: |
                   ls -a
-                  npx vercel --token ${VERCEL_TOKEN} --prod
+                  npx vercel --token ${{ secrets.VERCEL_TOKEN }} --prod
