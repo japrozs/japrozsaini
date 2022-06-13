@@ -7,20 +7,13 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            # - uses: actions/setup-node@v1
-            #   with:
-            #   node-version: 12
-            - name: "Deploy web to Vercel"
-            - uses: amondnet/vercel-action@v20
+            - uses: actions/setup-node@v1
               with:
-                  vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
-                  vercel-args: "--prod" #Optional
-                  vercel-org-id: ${{ secrets.VERCEL_ORG_ID}} #Required
-                  vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}} #Required
-            #   env:
-            #       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-            #       VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-            #       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-            #   run: |
-            #       echo token :: ${VERCEL_TOKEN}
-            #       npx vercel --token ${VERCEL_TOKEN} --prod
+              node-version: 12
+            - name: "Deploy web to Vercel"
+              env:
+                  VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+                  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+                  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+              run: |
+                  npx vercel --token ${VERCEL_TOKEN} --prod
