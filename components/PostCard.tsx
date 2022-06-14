@@ -56,6 +56,7 @@ export const PostCard: React.FC<PostCardProps> = ({
                 <Text
                     mx={"auto"}
                     mr={"0"}
+                    fontWeight={600}
                     fontFamily="body"
                     // color={"#b2bdcd"}
                     color={"#34D399"}

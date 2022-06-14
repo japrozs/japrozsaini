@@ -68,6 +68,7 @@ const Blog = ({ content, data }) => {
                     mx={"auto"}
                     mb={5}
                     mr={"0"}
+                    fontWeight={600}
                     fontFamily="body"
                     // color={"#b2bdcd"}
                     color={"#34D399"}

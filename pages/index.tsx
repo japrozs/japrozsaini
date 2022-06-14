@@ -51,7 +51,7 @@ export default function Home(props) {
             </Head>
             <Text
                 fontWeight={"500"}
-                fontFamily={"Noe Display"}
+                className="pfr"
                 fontSize={fontSize}
             >
                 Hi, I{"'"}m Japroz Saini
@@ -66,10 +66,11 @@ export default function Home(props) {
             </Button>
             <Modal isOpen={isOpen} onClose={onClose} />
             <Text
+                mt={2}
                 mb={2}
                 fontSize={0.6 * parseInt(fontSize)}
                 fontWeight={"500"}
-                fontFamily={"Noe Display"}
+                className={'pfr'}
             >
                 Social Profiles
             </Text>
@@ -127,7 +128,7 @@ export default function Home(props) {
             </List>
             <Text
                 fontWeight={"500"}
-                fontFamily={"Noe Display"}
+                className={"pfr"}
                 mb={2}
                 fontSize={0.6 * parseInt(fontSize)}
             >
