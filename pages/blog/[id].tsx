@@ -61,7 +61,7 @@ const Blog = ({ content, data }) => {
                 <Head>
                     <title>{frontmatter.title} • Japroz Saini</title>
                 </Head>
-                <Text fontWeight="bold" fontFamily={"body"} fontSize={fontSize}>
+                <Text fontWeight="bold" className="pfr" fontSize={fontSize}>
                     {frontmatter.title}
                 </Text>
                 <Text

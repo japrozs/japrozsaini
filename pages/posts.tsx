@@ -44,7 +44,10 @@ const Posts: React.FC<PostProps> = (props) => {
                 <title>All Posts • Japroz Saini</title>
             </Head>
             <Navbar />
-            <Box my={12}/>
+            <Text className="pfr" fontSize={fontSize}>
+                Posts
+            </Text>
+            <Box mt={3} />
             {items.map((blog, i) => (
                 <PostCard
                     key={i}

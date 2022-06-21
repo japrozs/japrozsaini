@@ -49,17 +49,15 @@ export default function Home(props) {
             <Head>
                 <title>Home • Japroz Saini</title>
             </Head>
-            <Text
-                fontWeight={"500"}
-                className="pfr"
-                fontSize={fontSize}
-            >
+            <Text fontWeight={"500"} className="pfr" fontSize={fontSize}>
                 Hi, I{"'"}m Japroz Saini
             </Text>
             <Text mb={7} fontFamily="Inter" fontSize="18px" color="gray.300">
-                I{"'"}m a software engineer who loves to play with computers and write software in C/C++,
-                and am currently working on some open source projects in C and C++.
-                Feel free to check them out on my Github page.
+                I{"'"}m a software engineer who loves to play with computers and
+                write software in C/C++, and am currently working on some open
+                source projects in C and C++. Feel free to check them out on my
+                Github page.{" "}
+                <span style={{ opacity: 0.01 }}>0x6a6170726f7a</span>
             </Text>
             <Button onClick={onOpen} mb={2} fontFamily="body" variant="outline">
                 Contact me
@@ -70,7 +68,7 @@ export default function Home(props) {
                 mb={2}
                 fontSize={0.6 * parseInt(fontSize)}
                 fontWeight={"500"}
-                className={'pfr'}
+                className={"pfr"}
             >
                 Social Profiles
             </Text>

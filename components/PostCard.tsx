@@ -42,7 +42,7 @@ export const PostCard: React.FC<PostCardProps> = ({
             borderRadius="0.2rem"
             cursor="pointer"
             backgroundColor={"#151A21"}
-            _hover={{ backgroundColor: "#242c37" }}
+            _hover={{ opacity: 0.85 }}
         >
             <Flex mb={1} alignItems="center">
                 <Heading
@@ -58,7 +58,8 @@ export const PostCard: React.FC<PostCardProps> = ({
                     mr={"0"}
                     fontWeight={600}
                     fontFamily="body"
-                    // color={"#b2bdcd"}
+                    className="truncate"
+                    // color={"34D399"}
                     color={"#34D399"}
                 >
                     {parseDate(createdAt.replace(/-/g, " "))}

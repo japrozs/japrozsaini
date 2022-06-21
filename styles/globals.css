@@ -1,9 +1,20 @@
 @import url("https://rsms.me/inter/inter.css");
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
 @font-face {
     font-family: "Noe Display Bold";
     src: url("//db.onlinewebfonts.com/t/30a71dcf9a1c39558ca4e97c92a4b2fa.eot");
-    src: url("//db.onlinewebfonts.com/t/30a71dcf9a1c39558ca4e97c92a4b2fa.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/30a71dcf9a1c39558ca4e97c92a4b2fa.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/30a71dcf9a1c39558ca4e97c92a4b2fa.woff") format("woff"), url("//db.onlinewebfonts.com/t/30a71dcf9a1c39558ca4e97c92a4b2fa.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/30a71dcf9a1c39558ca4e97c92a4b2fa.svg#Noe Display Bold") format("svg");
+    src: url("//db.onlinewebfonts.com/t/30a71dcf9a1c39558ca4e97c92a4b2fa.eot?#iefix")
+            format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/30a71dcf9a1c39558ca4e97c92a4b2fa.woff2")
+            format("woff2"),
+        url("//db.onlinewebfonts.com/t/30a71dcf9a1c39558ca4e97c92a4b2fa.woff")
+            format("woff"),
+        url("//db.onlinewebfonts.com/t/30a71dcf9a1c39558ca4e97c92a4b2fa.ttf")
+            format("truetype"),
+        url("//db.onlinewebfonts.com/t/30a71dcf9a1c39558ca4e97c92a4b2fa.svg#Noe Display Bold")
+            format("svg");
 }
 
 html,
@@ -12,8 +23,8 @@ body {
     margin: 0;
     /* font-family: "Noe Display Medium" !important; */
     background-color: #0b0e11 !important;
-    --chakra-fonts-heading : "Inter" !important;
-    --chakra-fonts-body : "Inter" !important;
+    --chakra-fonts-heading: "Inter" !important;
+    --chakra-fonts-body: "Inter" !important;
 }
 
 *:focus {
@@ -61,11 +72,11 @@ pre {
     outline: 0px !important;
 }
 
-.pfr{
-    font-family : "Playfair Display";
+.pfr {
+    font-family: "Cuprum";
+    font-weight: 800;
 }
 
 a {
     color: #30c18d !important;
 }
-
