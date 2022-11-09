@@ -32,7 +32,7 @@ export default function Home(props) {
         fontSize = "40px";
         width = "400px";
     } else {
-        fontSize = "60px";
+        fontSize = "50px";
         width = "850px";
     }
 
@@ -49,7 +49,7 @@ export default function Home(props) {
             <Head>
                 <title>Home • Japroz Saini</title>
             </Head>
-            <Text fontWeight={"500"} className="pfr" fontSize={fontSize}>
+            <Text mt={6} fontWeight={"700"} fontFamily={"Menlo"} className="pfr" fontSize={fontSize}>
                 Hi, I{"'"}m Japroz Saini
             </Text>
             <Text mb={7} fontFamily="Inter" fontSize="18px" color="gray.300">
@@ -64,10 +64,11 @@ export default function Home(props) {
             </Button>
             <Modal isOpen={isOpen} onClose={onClose} />
             <Text
-                mt={2}
-                mb={2}
+                mt={4}
+                mb={1}
                 fontSize={0.6 * parseInt(fontSize)}
-                fontWeight={"500"}
+                fontWeight={"700"}
+                fontFamily={"Menlo"}
                 className={"pfr"}
             >
                 Social Profiles
@@ -124,11 +125,13 @@ export default function Home(props) {
                     </Link>
                 </ListItem>
             </List>
-            <Text
-                fontWeight={"500"}
-                className={"pfr"}
-                mb={2}
+            {/*<Text
+                mt={4}
+                mb={1}
                 fontSize={0.6 * parseInt(fontSize)}
+                fontWeight={"700"}
+                fontFamily={"Menlo"}
+                className={"pfr"}
             >
                 Technologies I{"'"}m proficient in
             </Text>
@@ -156,7 +159,7 @@ export default function Home(props) {
                         <Text fontFamily={"Inter"}>Status</Text>
                     </Button>
                 </Link>
-            </Flex>
+            </Flex>*/}
         </Box>
     );
 }

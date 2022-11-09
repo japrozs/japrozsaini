@@ -45,7 +45,7 @@ const Blog = ({ content, data }) => {
         fontSize = "40px";
         width = "400px";
     } else {
-        fontSize = "60px";
+        fontSize = "50px";
         width = "850px";
     }
     return (
@@ -61,7 +61,7 @@ const Blog = ({ content, data }) => {
                 <Head>
                     <title>{frontmatter.title} • Japroz Saini</title>
                 </Head>
-                <Text fontWeight="bold" className="pfr" fontSize={fontSize}>
+                <Text fontWeight="bold" fontFamily={"Menlo"} className="pfr" fontSize={fontSize}>
                     {frontmatter.title}
                 </Text>
                 <Text

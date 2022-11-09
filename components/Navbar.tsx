@@ -34,7 +34,7 @@ const Navbar: React.FC<{}> = () => {
                 />
             </svg>
 
-            <Link href="/posts">
+            <Link href="/blog">
                 <Button
                     mx={"auto"}
                     mr={0}
@@ -42,7 +42,7 @@ const Navbar: React.FC<{}> = () => {
                     variant="outline"
                     fontFamily="Inter"
                 >
-                    Posts
+                    Blog
                 </Button>
             </Link>
         </Box>

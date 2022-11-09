@@ -13,7 +13,7 @@ const parseDate = (date) => {
 
 const truncate = (str: string, limit: number) => {
     if (str.length > limit) {
-        return str.substring(0, limit) + " ...";
+        return str.substring(0, limit) + "...";
     } else {
         return str;
     }
@@ -35,7 +35,7 @@ export const PostCard: React.FC<PostCardProps> = ({
     const router = useRouter();
     return (
         <Box
-            onClick={() => router.push(`blog/${slug}`)}
+            onClick={() => router.push(`post/${slug}`)}
             p={4}
             mb={2}
             transition={"all 0.1s ease-in-out"}
@@ -47,8 +47,8 @@ export const PostCard: React.FC<PostCardProps> = ({
             <Flex mb={1} alignItems="center">
                 <Heading
                     fontWeight="semibold"
-                    fontFamily={"body"}
-                    fontSize="4xl"
+                    fontFamily={"Menlo"}
+                    fontSize="3xl"
                     className={"truncate"}
                 >
                     {truncate(title, 24)}

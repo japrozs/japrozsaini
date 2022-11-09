@@ -44,7 +44,7 @@ const Posts: React.FC<PostProps> = (props) => {
                 <title>All Posts • Japroz Saini</title>
             </Head>
             <Navbar />
-            <Text className="pfr" fontSize={fontSize}>
+            <Text fontFamily={"Menlo"} fontWeight={"700"} fontSize={fontSize}>
                 Posts
             </Text>
             <Box mt={3} />
