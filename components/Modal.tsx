@@ -26,7 +26,7 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
                 <ModalCloseButton />
                 <ModalBody>
                     <Text fontFamily="Inter" fontSize="18px">
-                        For business enquiries, email me at{" "}
+                        {/*For business enquiries, email me at{" "}*/}
                         <Link href="mailto:sainijaproz@gmail.com">
                             <span
                                 style={{

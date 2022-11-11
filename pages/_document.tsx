@@ -35,12 +35,7 @@ class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
                         rel="stylesheet"
                     ></link>
-                    <script
-                        defer
-                        data-domain="japrozsaini.me"
-                        src="https://plausible.io/js/plausible.js"
-                    ></script>
-                </Head>
+               </Head>
                 <body>
                     <Main />
                     <NextScript />

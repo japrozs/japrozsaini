@@ -41,7 +41,7 @@ const Posts: React.FC<PostProps> = (props) => {
     return (
         <Box maxWidth="100vw" px={"4vw"} width={width} mx={"auto"}>
             <Head>
-                <title>All Posts • Japroz Saini</title>
+                <title>Blog</title>
             </Head>
             <Navbar />
             <Text fontFamily={"Menlo"} fontWeight={"700"} fontSize={fontSize}>

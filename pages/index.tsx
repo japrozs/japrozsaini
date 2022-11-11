@@ -47,16 +47,13 @@ export default function Home(props) {
         >
             <Navbar />
             <Head>
-                <title>Home • Japroz Saini</title>
+                <title>Home</title>
             </Head>
-            <Text mt={6} fontWeight={"700"} fontFamily={"Menlo"} className="pfr" fontSize={fontSize}>
+            <Text mt={6} fontFamily={"Menlo"} className="pfr" fontSize={fontSize}>
                 Hi, I{"'"}m Japroz Saini
             </Text>
             <Text mb={7} fontFamily="Inter" fontSize="18px" color="gray.300">
-                I{"'"}m a software engineer who loves to play with computers and
-                write software in C/C++, and am currently working on some open
-                source projects in C and C++. Feel free to check them out on my
-                Github page.{" "}
+                i build cool shit{" "}
                 <span style={{ opacity: 0.01 }}>0x6a6170726f7a</span>
             </Text>
             <Button onClick={onOpen} mb={2} fontFamily="body" variant="outline">
@@ -67,7 +64,6 @@ export default function Home(props) {
                 mt={4}
                 mb={1}
                 fontSize={0.6 * parseInt(fontSize)}
-                fontWeight={"700"}
                 fontFamily={"Menlo"}
                 className={"pfr"}
             >
@@ -141,7 +137,7 @@ export default function Home(props) {
                 <Check text="React, NextJS, React Native, GraphQL" />
                 <Check text="PostgreSQL, Firebase, UI/UX design" />
             </List>
-            <Flex justifyContent={"center"} alignItems={"center"} my={5}>
+            */}<Flex justifyContent={"center"} alignItems={"center"} mt={20}>
                 <Text
                     fontFamily={"Inter"}
                     mr={6}
@@ -159,7 +155,7 @@ export default function Home(props) {
                         <Text fontFamily={"Inter"}>Status</Text>
                     </Button>
                 </Link>
-            </Flex>*/}
+            </Flex>
         </Box>
     );
 }

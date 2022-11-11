@@ -46,7 +46,7 @@ export const PostCard: React.FC<PostCardProps> = ({
         >
             <Flex mb={1} alignItems="center">
                 <Heading
-                    fontWeight="semibold"
+                    // fontWeight="semibold"
                     fontFamily={"Menlo"}
                     fontSize="3xl"
                     className={"truncate"}
