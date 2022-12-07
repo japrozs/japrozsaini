@@ -95,6 +95,18 @@ export default function Home(props) {
                         Twitter
                         <ExternalLinkIcon mx={2} />
                     </Link>
+		    <Link
+                        display="flex"
+                        fontSize="19px"
+                        width="20%"
+                        fontWeight="600"
+                        alignItems="center"
+                        href="https://open.spotify.com/user/9bfb39ttvx3r31lkwf5907c6w?si=d4b1c9d57f124bff"
+                        isExternal
+                    >
+                       Spotify 
+                        <ExternalLinkIcon mx={2} />
+                    </Link>
                     <Link
                         display="flex"
                         fontSize="19px"

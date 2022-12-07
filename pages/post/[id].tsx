@@ -20,10 +20,10 @@ const parseDate = (date) => {
 };
 
 const CodeBlock = ({ children, ...rest }) => {
-    console.log(rest.className.replace("language-", ""));
+    console.log(rest.className?.replace("language-", ""));
     return (
         <SyntaxHighlighter
-            language={rest.className.replace("language-", "")}
+            language={rest.className?.replace("language-", "")}
             style={atomOneDark}
         >
             {children}
