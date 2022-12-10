@@ -85,7 +85,7 @@ const Blog = ({ content, data }) => {
                     {parseDate(frontmatter.date.replace(/-/g, " "))}
                 </Text>
                 <Divider />
-                <Box fontFamily={"body"} className={"content"}>
+                <Box marginTop={4} fontFamily={"body"} className={"content"}>
                     {/* <ReactMarkdown>{content}</ReactMarkdown> */}
                     <ReactMarkdown components={ChakraUIRenderer(theme)}>
                         {content}
