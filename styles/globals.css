@@ -17,6 +17,13 @@
             format("svg");
 }
 
+@font-face {
+    font-family: "Menlo";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Menlo.woff") format("woff");
+}
+
 html,
 body {
     padding: 0;
