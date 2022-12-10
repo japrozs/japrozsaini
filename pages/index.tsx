@@ -49,7 +49,12 @@ export default function Home(props) {
             <Head>
                 <title>Home</title>
             </Head>
-            <Text mt={6} fontFamily={"Menlo"} className="pfr" fontSize={fontSize}>
+            <Text
+                mt={6}
+                fontFamily={"Menlo"}
+                className="pfr"
+                fontSize={fontSize}
+            >
                 Hi, I{"'"}m Japroz Saini
             </Text>
             <Text mb={7} fontFamily="Inter" fontSize="18px" color="gray.300">
@@ -79,6 +84,7 @@ export default function Home(props) {
                         alignItems="center"
                         href="https://github.com/japrozs"
                         isExternal
+                        paddingBottom={1.5}
                     >
                         Github
                         <ExternalLinkIcon mx={2} />
@@ -91,11 +97,12 @@ export default function Home(props) {
                         alignItems="center"
                         href="https://twitter.com/japrozss"
                         isExternal
+                        paddingBottom={1.5}
                     >
                         Twitter
                         <ExternalLinkIcon mx={2} />
                     </Link>
-		    <Link
+                    <Link
                         display="flex"
                         fontSize="19px"
                         width="20%"
@@ -103,8 +110,9 @@ export default function Home(props) {
                         alignItems="center"
                         href="https://open.spotify.com/user/9bfb39ttvx3r31lkwf5907c6w?si=d4b1c9d57f124bff"
                         isExternal
+                        paddingBottom={1.5}
                     >
-                       Spotify 
+                        Spotify
                         <ExternalLinkIcon mx={2} />
                     </Link>
                     <Link
@@ -115,6 +123,7 @@ export default function Home(props) {
                         alignItems="center"
                         href="https://discord.gg/RUPjzFHsQK"
                         isExternal
+                        paddingBottom={1.5}
                     >
                         Discord
                         <ExternalLinkIcon mx={2} />
@@ -127,6 +136,7 @@ export default function Home(props) {
                         alignItems="center"
                         href="https://dev.to/japrozsaini"
                         isExternal
+                        paddingBottom={1.5}
                     >
                         Dev.to
                         <ExternalLinkIcon mx={2} />
@@ -149,7 +159,8 @@ export default function Home(props) {
                 <Check text="React, NextJS, React Native, GraphQL" />
                 <Check text="PostgreSQL, Firebase, UI/UX design" />
             </List>
-            */}<Flex justifyContent={"center"} alignItems={"center"} mt={20}>
+            */}
+            <Flex justifyContent={"center"} alignItems={"center"} mt={20}>
                 <Text
                     fontFamily={"Inter"}
                     mr={6}

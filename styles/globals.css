@@ -45,6 +45,10 @@ a {
     text-decoration: none;
 }
 
+.content .chakra-link {
+    font-family: "Menlo" !important;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -85,5 +89,13 @@ pre {
 }
 
 a {
-    color: #30c18d !important;
+    color: #4299e1 !important;
+}
+
+.inline-code {
+    font-family: "Menlo", monospace !important;
+    background-color: #1e293b;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 93%;
 }

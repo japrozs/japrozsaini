@@ -31,7 +31,7 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
                             <span
                                 style={{
                                     fontFamily: "menlo",
-                                    color: "#34D399",
+                                    color: "#4299e1",
                                 }}
                             >
                                 sainijaproz@gmail.com

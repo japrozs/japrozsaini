@@ -18,7 +18,7 @@ I just created a [git repository](https://github.com/japrozs/ts-project-setup) a
 
 ### For the react native app
 
--   @apollo/client
+-   `@apollo/client`
 -   GraphQL Code generator
 -   Expo
 -   React Navigation

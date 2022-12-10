@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Divider, Text } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import Head from "next/head";
@@ -21,14 +21,18 @@ const parseDate = (date) => {
 
 const CodeBlock = ({ children, ...rest }) => {
     console.log(rest.className?.replace("language-", ""));
-    return (
-        <SyntaxHighlighter
-            language={rest.className?.replace("language-", "")}
-            style={atomOneDark}
-        >
-            {children}
-        </SyntaxHighlighter>
-    );
+    if (rest.className?.includes("language-")) {
+        return (
+            <SyntaxHighlighter
+                language={rest.className?.replace("language-", "")}
+                style={atomOneDark}
+            >
+                {children}
+            </SyntaxHighlighter>
+        );
+    } else {
+        return <span className="inline-code">{children}</span>;
+    }
 };
 
 const theme = {
@@ -61,7 +65,12 @@ const Blog = ({ content, data }) => {
                 <Head>
                     <title>{frontmatter.title} • Japroz Saini</title>
                 </Head>
-                <Text fontWeight="bold" fontFamily={"Menlo"} className="pfr" fontSize={fontSize}>
+                <Text
+                    fontWeight="bold"
+                    fontFamily={"Menlo"}
+                    className="pfr"
+                    fontSize={fontSize}
+                >
                     {frontmatter.title}
                 </Text>
                 <Text
@@ -71,11 +80,12 @@ const Blog = ({ content, data }) => {
                     fontWeight={600}
                     fontFamily="body"
                     // color={"#b2bdcd"}
-                    color={"#34D399"}
+                    color={"#4299e1"}
                 >
                     {parseDate(frontmatter.date.replace(/-/g, " "))}
                 </Text>
-                <Box fontFamily={"body"}>
+                <Divider />
+                <Box fontFamily={"body"} className={"content"}>
                     {/* <ReactMarkdown>{content}</ReactMarkdown> */}
                     <ReactMarkdown components={ChakraUIRenderer(theme)}>
                         {content}

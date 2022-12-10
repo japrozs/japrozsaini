@@ -5,10 +5,10 @@ description: Technologies, topics and programming languages that I want to learn
 date: 7-December-2022
 ---
 
-* Computer Architecture
-* [x86 assembly](https://en.wikipedia.org/wiki/X86_assembly_language)
-* [Haskell](https://ziglang.org)
-* [CTFs (Capture the flags)](https://en.wikipedia.org/wiki/Capture_the_flag)
-* [Ziglang](https://www.haskell.org/)
-* [Verilog](https://en.wikipedia.org/wiki/Verilog)
-* [VHDL](https://en.wikipedia.org/wiki/VHDL)
+-   Computer Architecture
+-   [x86 assembly](https://en.wikipedia.org/wiki/X86_assembly_language)
+-   [Haskell](https://ziglang.org)
+-   [CTFs (Capture the flags)](https://en.wikipedia.org/wiki/Capture_the_flag)
+-   [Ziglang](https://www.haskell.org/)
+-   [Verilog](https://en.wikipedia.org/wiki/Verilog)
+-   [VHDL](https://en.wikipedia.org/wiki/VHDL)

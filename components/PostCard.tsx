@@ -60,7 +60,7 @@ export const PostCard: React.FC<PostCardProps> = ({
                     fontFamily="body"
                     className="truncate"
                     // color={"34D399"}
-                    color={"#34D399"}
+                    color={"#4299e1"}
                 >
                     {parseDate(createdAt.replace(/-/g, " "))}
                 </Text>
