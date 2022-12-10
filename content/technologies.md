@@ -7,8 +7,8 @@ date: 7-December-2022
 
 -   Computer Architecture
 -   [x86 assembly](https://en.wikipedia.org/wiki/X86_assembly_language)
--   [Haskell](https://ziglang.org)
+-   [Haskell](https://www.haskell.org)
 -   [CTFs (Capture the flags)](https://en.wikipedia.org/wiki/Capture_the_flag)
--   [Ziglang](https://www.haskell.org/)
+-   [Ziglang](https://ziglang.org/)
 -   [Verilog](https://en.wikipedia.org/wiki/Verilog)
 -   [VHDL](https://en.wikipedia.org/wiki/VHDL)
