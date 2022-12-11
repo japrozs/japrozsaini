@@ -52,8 +52,8 @@ export default function Home(props) {
             <Text
                 mt={6}
                 fontFamily={"Menlo"}
-                className="pfr"
-                fontSize={fontSize}
+		fontSize={0.6 * parseInt(fontSize)}
+		fontWeight={800}
             >
                 Hi, I{"'"}m Japroz Saini
             </Text>

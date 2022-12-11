@@ -46,7 +46,7 @@ const Blog = ({ content, data }) => {
     let width = "";
 
     if (isTabletOrMobile) {
-        fontSize = "40px";
+        fontSize = "30px";
         width = "400px";
     } else {
         fontSize = "50px";
@@ -68,8 +68,8 @@ const Blog = ({ content, data }) => {
                 <Text
                     fontWeight="bold"
                     fontFamily={"Menlo"}
-                    className="pfr"
-                    fontSize={fontSize}
+                    className="title"
+                    // fontSize={fontSize}
                 >
                     {frontmatter.title}
                 </Text>
