@@ -95,7 +95,7 @@ export default function Home(props) {
                         width="20%"
                         fontWeight="600"
                         alignItems="center"
-                        href="https://twitter.com/japrozss"
+                        href="https://twitter.com/japrozs"
                         isExternal
                         paddingBottom={1.5}
                     >
