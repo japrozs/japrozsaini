@@ -7,7 +7,7 @@ date: 30-August-2021
 
 ### Intro
 
-I just created a [git repository](https://github.com/japrozs/ts-project-setup) about my latest boilerplate setup whenever I start a new projcet. It uses the following technologies
+I just created a [git repository](https://github.com/japrozs/ts-project-setup) about my latest boilerplate setup whenever I start a new project. It uses the following technologies
 
 -   Redis
 -   NodeJS

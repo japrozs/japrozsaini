@@ -5,8 +5,6 @@ description: A few days, I was feeling bored so I went to freecodecamp.org to le
 date: 6-September-2021
 ---
 
-## The Idea
-
 A few days ago, I was feeling bored so I went to [freecodecamp.org](www.freecodecamp.org) to learn some new stuff. I looked in to the Machine Learning course, did a few problems and started fiddling with the Chrome devtools when I saw a big JSON object with almost 1700 items and each had a similar structure like so:
 
 ```json
@@ -17,6 +15,8 @@ A few days ago, I was feeling bored so I went to [freecodecamp.org](www.freecode
     }
 }
 ```
+
+## The Idea
 
 I noticed that the property blockName referred to the course I was learning at that time and I thought that the id would refer to the particular challenge that i was solving. I opened the dev tools, and I was right ! freecodecamp was making requests to their API for solving challenge and that id corresponded to the id of the large JSON object.
 

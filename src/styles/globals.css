@@ -1,0 +1,247 @@
+@import url("https://fonts.cdnfonts.com/css/menlo");
+
+@font-face {
+    font-family: "Univers";
+    font-weight: normal;
+    src: url("/fonts/univers-regular.ttf");
+}
+
+@font-face {
+    font-family: "Univers-next";
+    font-weight: 450;
+    src: url("/fonts/univers-next-regular.woff2");
+}
+
+@font-face {
+    font-family: "Univers";
+    font-weight: bold;
+    src: url("/fonts/univers-bold.ttf");
+}
+
+@font-face {
+    font-family: "Univers";
+    font-stretch: condensed;
+    font-weight: bold;
+    src: url("/fonts/univers-cn-bold.ttf");
+}
+
+@font-face {
+    font-family: "Univers";
+    font-stretch: condensed;
+    src: url("/fonts/univers-cn-rg.ttf");
+}
+
+@font-face {
+    font-family: "Univers";
+    font-weight: lighter;
+    src: url("/fonts/univers-light.ttf");
+}
+
+/* @font-face {
+    font-family: "Berkeley mono";
+    font-weight: normal;
+    src: url("/fonts/berkeley-mono-regular.woff2");
+}
+
+@font-face {
+    font-family: "Berkeley mono";
+    font-weight: bold;
+    src: url("/fonts/berkeley-mono-bold.woff2");
+} */
+
+:root {
+    font-family: "Univers";
+    --primary-blue: #007aff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0px 40px;
+}
+
+.navbar {
+    padding: 12px 0px;
+    border-bottom: 1px solid slategrey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-heading {
+    font-family: "Univers";
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.text-ellipsis {
+    text-overflow: ellipsis;
+}
+
+.navbar-path * {
+    font-family: menlo;
+    font-size: 0.9rem;
+    margin-right: 6px;
+}
+
+.navbar-path span:not(.no-gray) {
+    color: slategrey;
+}
+
+.navbar-path span {
+    font-family: "Univers-next";
+    font-weight: 500;
+    font-stretch: 95%;
+}
+
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: hidden;
+}
+
+a:not(.wrap) {
+    white-space: nowrap;
+}
+
+a:not(.no-menlo) {
+    font-family: menlo;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.description {
+    font-family: Menlo;
+    font-size: 0.9rem;
+    margin: 10px 0px;
+}
+
+table {
+    border: 1px solid slategrey;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+    padding: 3px 6px;
+    font-size: 1rem;
+    background-color: #eaeaea;
+    border-bottom: 1px solid slategrey;
+}
+
+tr {
+    border: solid;
+    border-color: slategrey;
+    border-width: 1px 0;
+}
+
+tr:first-child {
+    border-top: none;
+}
+tr:last-child {
+    border-bottom: none;
+}
+
+td {
+    /* font-family: "Univers";
+    font-weight: 450; */
+    font-family: "Univers-next";
+    font-weight: 500;
+    font-stretch: 95%;
+    font-size: 1rem;
+    text-rendering: optimizeLegibility;
+    padding: 0.3rem 0.6rem 0;
+}
+
+@media (max-width: 40rem) {
+    body {
+        margin: 10px;
+    }
+}
+
+.content h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Univers";
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 10px 0px 5px 0px;
+}
+
+.content a {
+    font-family: "Univers-next";
+    font-weight: 500;
+    font-stretch: 95%;
+}
+
+.content *:not(h1, h2, h3, h4, h5, h6, code, pre *, .inline-code) {
+    font-family: "Univers-next";
+    font-weight: 500;
+    font-stretch: 95%;
+}
+
+.inline-code {
+    font-size: 0.95rem;
+    font-family: menlo;
+}
+
+pre {
+    border-radius: 0.2rem !important;
+}
+
+.footer {
+    font-family: "Univers-next";
+    font-weight: 500;
+    font-stretch: 95%;
+    font-size: 0.9rem;
+    color: slategray;
+    text-rendering: optimizeLegibility;
+    margin-top: 50px;
+}
+
+.content ul {
+    margin: 4px 0px;
+}
+
+.content li {
+    list-style: inside;
+}
