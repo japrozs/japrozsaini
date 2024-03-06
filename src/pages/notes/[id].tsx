@@ -2,10 +2,13 @@ import { NextPageContext } from "next";
 import React from "react";
 import matter from "gray-matter";
 import fs from "fs";
-import Markdown from "react-markdown";
+import Markdown, { Components } from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import atomOneDark from "react-syntax-highlighter/dist/cjs/styles/prism/material-dark";
 import Head from "next/head";
+import remarkGfm from "remark-gfm";
+import { remark } from "remark";
+import html from "remark-html";
 
 interface PostProps {}
 
@@ -45,10 +48,13 @@ export async function getStaticProps({
             "utf-8"
         );
         const { data: frontmatter, content } = matter(fileName);
+        const processedContent = await remark().use(html).process(content);
+        const contentHtml = processedContent.toString();
 
         return {
             props: {
                 frontmatter,
+                contentHtml,
                 content,
             },
         };
@@ -78,13 +84,15 @@ function code({ children, ...rest }) {
     }
 }
 
-const theme = {
+const theme: Partial<Components> | null | undefined = {
     code: code as any,
+    br: () => <p>hi there</p>,
 };
 
 const Post = ({
     frontmatter,
     content,
+    contentHtml,
 }: {
     frontmatter: {
         slug: string;
@@ -93,8 +101,10 @@ const Post = ({
         description: string;
     };
     content: string;
+    contentHtml: string;
 }) => {
-    console.log(frontmatter, content);
+    // console.log(frontmatter, content);
+    console.log(contentHtml);
     return (
         <>
             <Head>
@@ -121,7 +131,7 @@ const Post = ({
             >
                 {frontmatter.title}
             </p>
-            <div
+            {/* <div
                 style={{
                     width: "100%",
                     maxWidth: "40rem",
@@ -129,7 +139,15 @@ const Post = ({
                 className="content"
             >
                 <Markdown components={theme}>{content}</Markdown>
-            </div>
+            </div> */}
+            <div
+                style={{
+                    width: "100%",
+                    maxWidth: "40rem",
+                }}
+                className="content"
+                dangerouslySetInnerHTML={{ __html: contentHtml }}
+            ></div>
             <p className="footer">
                 © Copyright {new Date().getFullYear()}, Japroz Singh Saini.{" "}
                 <a

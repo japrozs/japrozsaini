@@ -242,6 +242,26 @@ pre {
     margin: 4px 0px;
 }
 
+.content img {
+    padding: 7px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin: 10px auto;
+    max-width: 40rem;
+    border: 1px solid #c1c1c1;
+}
+
 .content li {
     list-style: inside;
+}
+
+.content strong {
+    font-weight: bold !important;
+}
+
+.content p {
+    margin-bottom: 25px;
 }
