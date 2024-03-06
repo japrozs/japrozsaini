@@ -193,6 +193,11 @@ td {
     body {
         margin: 10px;
     }
+    .content img {
+        background-size: contain !important;
+        background-position: top !important;
+        background-color: #000;
+    }
 }
 
 .content h1,
@@ -244,14 +249,15 @@ pre {
 
 .content img {
     padding: 7px;
-    /* margin-top: 10px;
-    margin-bottom: 10px; */
     display: flex;
     position: relative;
     flex-direction: row;
     margin: 10px auto;
-    max-width: 40rem;
+    max-width: none;
+    object-fit: cover;
+    max-width: none;
     border: 1px solid #c1c1c1;
+    width: min(90vw, 40rem);
 }
 
 .content li {
