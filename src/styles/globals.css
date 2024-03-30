@@ -230,6 +230,9 @@ h6 {
 }
 
 pre {
+    border: 1px solid lightslategray;
+    padding: 10px;
+    margin-bottom: 10px;
     border-radius: 0.2rem !important;
 }
 

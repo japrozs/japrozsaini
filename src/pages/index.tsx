@@ -34,7 +34,17 @@ const Home: React.FC<HomeProps> = (props) => {
                     <a href="/">Home</a>
                 </div>
             </nav>
-            <p className="description">I build cool stuff ;{")"}</p>
+            <p className="description">
+                I build cool stuff ;{")"}
+                <br />
+                <span
+                    style={{
+                        color: "lightslategray",
+                    }}
+                >
+                    ਪੱਕੇ ਢੀਠ
+                </span>
+            </p>
             <table
                 style={{
                     margin: "40px 0px",
