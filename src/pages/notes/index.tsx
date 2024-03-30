@@ -60,13 +60,17 @@ const Notes: React.FC<NotesProps> = (props) => {
                                         whiteSpace: "nowrap",
                                     }}
                                 >
-                                    {new Date(blog.date)
-                                        .toLocaleDateString("en-us", {
-                                            year: "numeric",
-                                            month: "2-digit",
-                                            day: "2-digit",
-                                        })
-                                        .replaceAll("/", "-")}
+                                    {
+                                        new Date(blog.date)
+                                            .toISOString()
+                                            .split("T")[0]
+                                        // .toLocaleDateString("en-us", {
+                                        //     year: "numeric",
+                                        //     month: "2-digit",
+                                        //     day: "2-digit",
+                                        // })
+                                        //.replaceAll("/", "-")
+                                    }
                                 </p>
                             </td>
                             <td>
