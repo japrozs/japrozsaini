@@ -25,7 +25,7 @@ const Home: React.FC<HomeProps> = (props) => {
     return (
         <>
             <Head>
-                <title>japroz saini</title>
+                <title>japroz singh</title>
             </Head>
             <nav className="navbar">
                 <p className="navbar-heading">Navigation</p>
