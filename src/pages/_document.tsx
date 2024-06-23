@@ -26,16 +26,10 @@ export default function Document() {
                     href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
                     rel="stylesheet"
                 ></link>
-                <script async src="https://rum.cronitor.io/script.js"></script>
-<script>
-    window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
-    cronitor('config', { clientKey: '7bd477f8ee4bb95301b2400ced254bd5' });
-</script>
-
-            </head>
+            </Head>
             <body>
-                <main />
-                <nextscript />
+                <Main />
+                <NextScript />
             </body>
         </Html>
     );
