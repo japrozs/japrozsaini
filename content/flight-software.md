@@ -11,4 +11,4 @@ Coincidentally, around this time, our [Rocket Club at GSU](https://rocket-tech-g
 
 We're going to be writing our own flight software in scratch in the Arduino library that is going to handle everything from the launch, to the avionics, the parachute system and the most important of them all, the landing sequence. This is going to be done with the help of a ton of engineers from GSU who are going to be working day and night to make this dream a reality and "build cool shit" along the way. We are going to be contributing to the repositories everything publicly and every single peice of source code that comes out of the organisation is going to be open-source. Lastly, this post is looking somewhat bland due to the absense of images, so here's a picture of the night-sky that I took from my phone.
 
-![image of the night sky taken from an iPhone 13](https://i.ibb.co/KVgWVqr/image.png)
+![image of the night sky taken from an iPhone 13](/img/flight-software-night-sky.png)
