@@ -164,7 +164,7 @@ const Home: React.FC<HomeProps> = (props) => {
                     style={{
                         fontSize: "0.93rem !important",
                     }}
-                    href="https://japrozsaini.statuspage.io/"
+                    href="https://jp.statuspage.io/"
                     target="_blank"
                     className="no-menlo"
                 >
