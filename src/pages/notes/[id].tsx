@@ -1,5 +1,5 @@
 import { NextPageContext } from "next";
-import React from "react";
+import React, { LegacyRef, useEffect, useRef} from "react";
 import matter from "gray-matter";
 import fs from "fs";
 import Markdown, { Components } from "react-markdown";
@@ -11,6 +11,34 @@ import { remark } from "remark";
 import html from "remark-html";
 
 interface PostProps {}
+
+interface CommentsProps {}
+
+const Comments: React.FC<CommentsProps> = ({}) => {
+    const commentBox = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        // Check if the script has already been added to avoid duplication
+        if (!document.querySelector('script[src="https://utteranc.es/client.js"]')) {
+            let scriptEl = document.createElement("script");
+            scriptEl.setAttribute("src", "https://utteranc.es/client.js");
+            scriptEl.setAttribute("crossorigin", "anonymous");
+            scriptEl.setAttribute("async", "true");
+            scriptEl.setAttribute("label", "Comment... 🚀 😃 ");
+            scriptEl.setAttribute("repo", "japrozs/japrozsaini");
+            scriptEl.setAttribute("issue-term", "title");
+            scriptEl.setAttribute("theme", "github-light");
+            commentBox.current && commentBox.current.appendChild(scriptEl);
+        }
+    }, []);
+
+    return (
+        <div id="comments" style={{borderTop : '1px dashed grey', marginTop : '30px', paddingTop : '20px'}}>
+            <p className="navbar-heading">Comments</p>
+            <div ref={commentBox}></div>
+        </div>
+    );
+};
 
 export async function getStaticPaths() {
     try {
@@ -148,6 +176,12 @@ const Post = ({
                 className="content"
                 dangerouslySetInnerHTML={{ __html: contentHtml }}
             ></div>
+            <div style={{
+                    width: "100%",
+                    maxWidth: "40rem",
+                }}>
+            <Comments/>
+            </div>
             <p className="footer">
                 © Copyright {new Date().getFullYear()}, Japroz Singh Saini.{" "}
                 <a
