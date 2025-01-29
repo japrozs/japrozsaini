@@ -81,7 +81,7 @@ const Home: React.FC<HomeProps> = (props) => {
                         <td>Email</td>
                         <td>
                             <a href="mailto:japrozsaini@outlook.com">
-                                japrozsaini@outlook.com
+                                japrozsaini {at} outlook {dot} com
                             </a>
                         </td>
                     </tr>
