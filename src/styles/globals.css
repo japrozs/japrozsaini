@@ -1,41 +1,41 @@
 @import url("https://fonts.cdnfonts.com/css/menlo");
-@import url('https://fonts.cdnfonts.com/css/eb-garamond-3');
+@import url("https://fonts.cdnfonts.com/css/eb-garamond-3");
 
 @font-face {
-    font-family: "Univers";
-    font-weight: normal;
-    src: url("/fonts/univers-regular.ttf");
+	font-family: "Univers";
+	font-weight: normal;
+	src: url("/fonts/univers-regular.ttf");
 }
 
 @font-face {
-    font-family: "Univers-next";
-    font-weight: 450;
-    src: url("/fonts/univers-next-regular.woff2");
+	font-family: "Univers-next";
+	font-weight: 450;
+	src: url("/fonts/univers-next-regular.woff2");
 }
 
 @font-face {
-    font-family: "Univers";
-    font-weight: bold;
-    src: url("/fonts/univers-bold.ttf");
+	font-family: "Univers";
+	font-weight: bold;
+	src: url("/fonts/univers-bold.ttf");
 }
 
 @font-face {
-    font-family: "Univers";
-    font-stretch: condensed;
-    font-weight: bold;
-    src: url("/fonts/univers-cn-bold.ttf");
+	font-family: "Univers";
+	font-stretch: condensed;
+	font-weight: bold;
+	src: url("/fonts/univers-cn-bold.ttf");
 }
 
 @font-face {
-    font-family: "Univers";
-    font-stretch: condensed;
-    src: url("/fonts/univers-cn-rg.ttf");
+	font-family: "Univers";
+	font-stretch: condensed;
+	src: url("/fonts/univers-cn-rg.ttf");
 }
 
 @font-face {
-    font-family: "Univers";
-    font-weight: lighter;
-    src: url("/fonts/univers-light.ttf");
+	font-family: "Univers";
+	font-weight: lighter;
+	src: url("/fonts/univers-light.ttf");
 }
 
 /* @font-face {
@@ -51,154 +51,154 @@
 } */
 
 :root {
-    font-family: "Univers";
-    --primary-blue: #2d6cdf;
+	font-family: "Univers";
+	--primary-blue: #2d6cdf;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 html,
 body {
-    overflow-x: hidden;
-    box-sizing: border-box;
-    line-height: 1.5;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	line-height: 1.5;
 }
 
 body {
-    margin: 0px 40px;
+	margin: 0px 40px;
 }
 
 .navbar {
-    padding: 12px 0px;
-    border-bottom: 1px solid slategrey;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+	padding: 12px 0px;
+	border-bottom: 1px solid slategrey;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 .navbar-heading {
-    font-family: "Univers";
-    font-weight: bold;
-    font-size: 1rem;
-    margin-right: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+	font-family: "Univers";
+	font-weight: bold;
+	font-size: 1rem;
+	margin-right: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 .truncate {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .line-clamp-1 {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
 }
 
 .text-ellipsis {
-    text-overflow: ellipsis;
+	text-overflow: ellipsis;
 }
 
 .navbar-path * {
-    font-family: menlo;
-    font-size: 0.9rem;
-    margin-right: 6px;
+	font-family: menlo;
+	font-size: 0.9rem;
+	margin-right: 6px;
 }
 
 .navbar-path span:not(.no-gray) {
-    color: slategrey;
+	color: slategrey;
 }
 
 .navbar-path span {
-    font-family: "Univers-next";
-    font-weight: 500;
-    font-stretch: 95%;
+	font-family: "Univers-next";
+	font-weight: 500;
+	font-stretch: 95%;
 }
 
 a {
-    color: var(--primary-blue);
-    text-decoration: none;
-    font-size: 1rem;
-    overflow: hidden;
-    text-overflow: hidden;
+	color: var(--primary-blue);
+	text-decoration: none;
+	font-size: 1rem;
+	overflow: hidden;
+	text-overflow: hidden;
 }
 
 a:not(.wrap) {
-    white-space: nowrap;
+	white-space: nowrap;
 }
 
 a:not(.no-menlo) {
-    font-family: menlo;
+	font-family: menlo;
 }
 
 a:hover {
-    text-decoration: underline;
-    cursor: pointer;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .description {
-    font-family: Menlo;
-    font-size: 0.9rem;
-    margin: 10px 0px;
+	font-family: Menlo;
+	font-size: 0.9rem;
+	margin: 10px 0px;
 }
 
 table {
-    border: 1px solid slategrey;
-    border-collapse: collapse;
+	border: 1px solid slategrey;
+	border-collapse: collapse;
 }
 
 td {
-    padding: 5px;
+	padding: 5px;
 }
 
 th {
-    text-align: left;
-    padding: 3px 6px;
-    font-size: 1rem;
-    background-color: #eaeaea;
-    border-bottom: 1px solid slategrey;
+	text-align: left;
+	padding: 3px 6px;
+	font-size: 1rem;
+	background-color: #eaeaea;
+	border-bottom: 1px solid slategrey;
 }
 
 tr {
-    border: solid;
-    border-color: slategrey;
-    border-width: 1px 0;
+	border: solid;
+	border-color: slategrey;
+	border-width: 1px 0;
 }
 
 tr:first-child {
-    border-top: none;
+	border-top: none;
 }
 tr:last-child {
-    border-bottom: none;
+	border-bottom: none;
 }
 
 td {
-    /* font-family: "Univers";
+	/* font-family: "Univers";
     font-weight: 450; */
-    font-family: "Univers-next";
-    font-weight: 500;
-    font-stretch: 95%;
-    font-size: 1rem;
-    text-rendering: optimizeLegibility;
-    padding: 0.3rem 0.6rem 0;
+	font-family: "Univers-next";
+	font-weight: 500;
+	font-stretch: 95%;
+	font-size: 1rem;
+	text-rendering: optimizeLegibility;
+	padding: 0.3rem 0.6rem 0;
 }
 
 @media (max-width: 40rem) {
-    body {
-        margin: 10px;
-    }
-    .content img {
-        background-size: contain !important;
-        background-position: top !important;
-        background-color: #000;
-    }
+	body {
+		margin: 10px;
+	}
+	.content img {
+		background-size: contain !important;
+		background-position: top !important;
+		background-color: #000;
+	}
 }
 
 .content h1,
@@ -207,73 +207,85 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Univers";
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin: 10px 0px 5px 0px;
+	font-family: "Univers";
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin: 10px 0px 5px 0px;
 }
 
 .content a {
-    font-family: "Univers-next";
-    font-weight: 500;
-    font-stretch: 95%;
+	font-family: "Univers-next";
+	font-weight: 500;
+	font-stretch: 95%;
 }
 
 .content *:not(h1, h2, h3, h4, h5, h6, code, pre *, .inline-code) {
-    font-family: "Univers-next";
-    font-weight: 500;
-    font-stretch: 95%;
+	font-family: "Univers-next";
+	font-weight: 500;
+	font-stretch: 95%;
 }
 
 .inline-code {
-    font-size: 0.95rem;
-    font-family: menlo;
+	font-size: 0.95rem;
+	font-family: menlo;
 }
 
 pre {
-    border: 1px solid lightslategray;
-    padding: 10px;
-    margin-bottom: 10px;
-    overflow-x: scroll;
-    border-radius: 0.2rem !important;
+	border: 1px solid lightslategray;
+	padding: 10px;
+	margin-bottom: 10px;
+	overflow-x: scroll;
+	border-radius: 0.2rem !important;
+}
+
+.all-notes-link {
+	font-family: "Univers-next";
+	font-weight: 500;
+	font-stretch: 95%;
+	font-size: 1rem;
+	text-rendering: optimizeLegibility;
 }
 
 .footer {
-    font-family: "Univers-next";
-    font-weight: 500;
-    font-stretch: 95%;
-    font-size: 0.9rem;
-    color: slategray;
-    text-rendering: optimizeLegibility;
-    margin-top: 50px;
+	font-family: "Univers-next";
+	font-weight: 500;
+	font-stretch: 95%;
+	font-size: 0.9rem;
+	color: slategray;
+	text-rendering: optimizeLegibility;
+	margin-top: 50px;
 }
 
 .content ul {
-    margin: 4px 0px;
+	margin: 4px 0px;
 }
 
 .content img {
-    padding: 7px;
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    margin: 10px auto;
-    max-width: none;
-    object-fit: cover;
-    max-width: none;
-    border: 1px solid #c1c1c1;
-    background-color: white;
-    width: min(90vw, 40rem);
+	padding: 7px;
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	margin: 10px auto;
+	max-width: none;
+	object-fit: cover;
+	max-width: none;
+	border: 1px solid #c1c1c1;
+	background-color: white;
+	width: min(90vw, 40rem);
 }
 
 .content li {
-    list-style: inside;
+	list-style: inside;
 }
 
 .content strong {
-    font-weight: bold !important;
+	font-weight: bold !important;
 }
 
 .content p {
-    margin-bottom: 25px;
+	margin-bottom: 25px;
+}
+
+.notes-table {
+	margin-bottom: 0px;
 }
