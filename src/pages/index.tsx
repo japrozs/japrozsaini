@@ -107,6 +107,17 @@ const Home: React.FC<HomeProps> = (props) => {
 							</a>
 						</td>
 					</tr>
+					<tr>
+						<td>Resume</td>
+						<td>
+							<a
+								href="/files/japroz-singh-resume.pdf"
+								target="_blank"
+							>
+								japroz-singh-resume.pdf
+							</a>
+						</td>
+					</tr>
 				</tbody>
 			</table>
 			<table
